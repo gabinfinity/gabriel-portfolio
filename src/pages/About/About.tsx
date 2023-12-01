@@ -1,4 +1,3 @@
-import React from 'react'
 import { AboutArticle, AboutConteiner, AboutImage, AboutTitle } from './About.styles'
 import { TypeAnimation } from 'react-type-animation'
 import { ArtTop, ArtTopOverlay } from '../Home/Home.styles'

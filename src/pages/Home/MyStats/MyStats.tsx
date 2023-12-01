@@ -1,4 +1,3 @@
-import React from 'react'
 import { MyStatsNumbers, StatsFrame } from './MyStats.styles'
 
 interface MyStatsTypes {

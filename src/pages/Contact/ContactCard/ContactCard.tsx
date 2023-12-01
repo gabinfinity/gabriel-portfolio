@@ -1,4 +1,3 @@
-import React from 'react'
 import { ContactCardContent, ContactCardStyle } from './ContactCard.styles'
 
 interface ContactCardTypes {
