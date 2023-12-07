@@ -4,6 +4,12 @@ export const AboutTitle = styled.div`
     padding: 48px 24px 48px 24px;
     width: 100%;
     text-align: center;
+
+    @media screen and (max-width: 992px) {
+        h1 {
+            font-size: 42px;
+        }
+    }
 `
 
 export const AboutConteiner = styled.div`
@@ -42,5 +48,11 @@ export const AboutImage = styled.div`
         
         width: 260px;
         animation: float 6s ease-in-out infinite;
+    }
+
+    @media screen and (max-width: 992px) {
+        img {
+            width: 150px;
+        }
     }
 `

@@ -6,6 +6,13 @@ export const ContactCardsContainer = styled.div`
     padding-left: 48px;
     padding-right: 48px;
     justify-content: space-between;
+    flex-wrap: wrap;
+
+    @media screen and (max-width: 992px) {
+        > :last-child {
+            flex-basis: 100%;
+        }
+    }
     
 `
 

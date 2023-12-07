@@ -1,18 +1,29 @@
 import styled from "styled-components";
 
+export const TopContainer = styled.div`
+    height: 430px;
+    @media screen and (max-width: 1233px) {
+        height: 370px;
+    }
+`
+
 export const ArtTop = styled.div`
-  position: absolute;
   width: 100%;
   top: 0;
   background-position: center;
   height: 330px;
   background-size: cover;
   background-image: url('https://miro.medium.com/v2/resize:fit:1358/0*eIhVp0KXrXSSHORN.gif');
+
+  @media screen and (max-width: 1233px) {
+    height: 270px;
+  }
+    
 `
 
 export const BannerBack = styled.div`
+    position: absolute;
   content: '';
-  position: absolute;
   top: 38px;
   width: 90%;
   height: 30px;
@@ -33,10 +44,10 @@ export const ArtTopOverlay = styled.div`
 `
 
 export const MyTopImage = styled.div`
+    position: absolute;
     background-size: cover;
     background-position-y: -200px;
     background-position-x: center;
-    position: absolute;
     top: 64px;
     height: 100%;
     width: 94%;
@@ -46,8 +57,9 @@ export const MyTopImage = styled.div`
 `
 
 export const ImageEffect = styled.div`
-    width: 94%;
+    padding: 30px;
     position: absolute;
+    width: 94%;
     height: 100%;
     top: 64px;
     left: 50%;
@@ -57,15 +69,19 @@ export const ImageEffect = styled.div`
     `
 
 export const BannerTitle = styled.div`
-    width: 70%;
-    position: absolute;
+    width: 100%;
     left: 10%;
     top: 100px;
     -ms-flex-item-align: center;
     align-self: center;
 
     h1 {
+        font-size: 5rem;
         color: #fafafc;
+
+        @media screen and (max-width: 1233px) {
+            font-size: 3rem;
+        }
     }
 `
 export const BannerText = styled.div`
@@ -82,8 +98,9 @@ export const StatsArea = styled.div`
     display: flex;
     justify-items: center;
     justify-content: space-between;
-    padding: 0 15px;
-    margin-top: 40%;
+    padding: 0 40px 0 40px;
+    gap: 16px;
+    
 `
 
 export const SwiperContainer = styled.div`
@@ -134,9 +151,8 @@ export const SwiperContainer = styled.div`
 
 export const GitHubStatsContainer = styled.div`
     flex-direction: column;
-    max-width: 100%;
+    width: 100%;
     display: flex;
-    flex-wrap: wrap;
     padding-left: 42px;
     padding-right: 42px;
     overflow: hidden;

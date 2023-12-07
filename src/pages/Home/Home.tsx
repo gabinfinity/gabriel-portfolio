@@ -1,5 +1,5 @@
 import MainButton from "../../components/MainButton/MainButton";
-import { ArtTop, ArtTopOverlay, BannerBack, BannerText, BannerTitle, GitHubStatsContainer, SwiperContainer, ImageEffect, MyTopImage, StatsArea } from "./Home.styles";
+import { ArtTop, ArtTopOverlay, BannerBack, BannerText, BannerTitle, GitHubStatsContainer, SwiperContainer, ImageEffect, MyTopImage, StatsArea, TopContainer } from "./Home.styles";
 import { TypeAnimation } from 'react-type-animation';
 import CardItem from "../../components/CardItem/CardItem";
 import { MyStats } from "./MyStats/MyStats";
@@ -16,37 +16,40 @@ export function Home() {
 
     return (
         <>
-            <ArtTop>
-                <BannerBack />
-                <ArtTopOverlay>
-                    <MyTopImage />
-                    <ImageEffect />
-                    <BannerTitle>
-                        <h1>Hi, my name is Gabriel. And this is me.</h1>
-                        <BannerText>
-                            <i>{`<code> `}</i>
-                            <TypeAnimation
-                                sequence={[
-                                    'I like to code software',
-                                    2000,
-                                    'I like to work hard',
-                                    2000,
-                                    'I like to play a lot games',
-                                    2000,
-                                    'And I really love coffee',
-                                    2000
-                                ]}
-                                wrapper="span"
-                                speed={50}
-                                style={{ fontSize: '16px', display: 'inline-block', fontFamily: 'Courier Prime' }}
-                                repeat={Infinity}
-                            />
-                            <i>{` </code>`}</i>
-                        </BannerText>
-                        <MainButton to='/about' buttonText='See More' />
-                    </BannerTitle>
-                </ArtTopOverlay>
-            </ArtTop>
+            <TopContainer>
+                <ArtTop>
+                    <BannerBack />
+                    <ArtTopOverlay>
+                        <MyTopImage />
+                        <ImageEffect>
+                            <BannerTitle>
+                                <h1>Hi, my name is Gabriel. And this is me.</h1>
+                                <BannerText>
+                                    <i>{`<code> `}</i>
+                                    <TypeAnimation
+                                        sequence={[
+                                            'I like to code software',
+                                            2000,
+                                            'I like to work hard',
+                                            2000,
+                                            'I like to play a lot games',
+                                            2000,
+                                            'And I really love coffee',
+                                            2000
+                                        ]}
+                                        wrapper="span"
+                                        speed={50}
+                                        style={{ fontSize: '16px', display: 'inline-block', fontFamily: 'Courier Prime' }}
+                                        repeat={Infinity}
+                                    />
+                                    <i>{` </code>`}</i>
+                                </BannerText>
+                                <MainButton to='/about' buttonText='See More' />
+                            </BannerTitle>
+                        </ImageEffect>
+                    </ArtTopOverlay>
+                </ArtTop>
+            </TopContainer>
             <StatsArea>
                 <MyStats numberStats='+1' textStats='Years Experience' />
                 <MyStats numberStats='4' textStats='Completed Projecs' />
@@ -61,30 +64,30 @@ export function Home() {
                     slidesPerView={3}
                     breakpoints={{
                         320: {
-                          slidesPerView: 1,
-                          spaceBetween: 10,
+                            slidesPerView: 1,
+                            spaceBetween: 10,
                         },
                         480: {
-                          slidesPerView: 1,
-                          spaceBetween: 10,
+                            slidesPerView: 1,
+                            spaceBetween: 10,
                         },
                         640: {
-                          slidesPerView: 2,
-                          spaceBetween: 10,
+                            slidesPerView: 2,
+                            spaceBetween: 10,
                         },
                         992: {
-                          slidesPerView: 2,
-                          spaceBetween: 10,
+                            slidesPerView: 2,
+                            spaceBetween: 10,
                         },
                         1200: {
-                          slidesPerView: 3,
-                          spaceBetween: 30,
+                            slidesPerView: 3,
+                            spaceBetween: 30,
                         },
                         1500: {
-                          slidesPerView: 3,
-                          spaceBetween: 30,
+                            slidesPerView: 3,
+                            spaceBetween: 30,
                         },
-                      }}
+                    }}
                     autoplay={{
                         delay: 3000,
                         disableOnInteraction: true,

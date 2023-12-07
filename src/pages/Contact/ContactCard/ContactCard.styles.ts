@@ -6,9 +6,12 @@ export const ContactCardStyle = styled.div`
     box-shadow: 0 3px 8px 0 rgba(15, 15, 20, 0.2);
     padding: 30px;
     margin-bottom: 30px;
-    flex: 0 0 30.333333%;
-    height: 130px;
-    max-width: 100%;
+    width: 300px;
+
+    @media screen and (max-width: 992px) {
+        margin-bottom: 14px;
+        width: 240px;
+    }
   `
 
 export const ContactCardContent = styled.div`
@@ -28,5 +31,18 @@ export const ContactCardContent = styled.div`
 
     ul li:last-child {
         margin-bottom: 0;
+    }
+
+    @media screen and (max-width: 992px) {
+        max-width: 100%;
+
+        h6 {
+            font-size: 11px;
+        }
+
+        span {
+            font-size: 11px;
+        }
+        
     }
 `

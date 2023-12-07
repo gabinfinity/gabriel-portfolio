@@ -2,7 +2,6 @@ import styled from "styled-components";
 
 export const MyStatsNumbers = styled.div`
   overflow: hidden;
-  padding: 0 30px;
   position: relative;
 `
 
