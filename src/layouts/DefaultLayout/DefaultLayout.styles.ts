@@ -10,24 +10,6 @@ export const AppDiv = styled.div`
   scrollbar-width: none;
 `
 
-export const AppMobileTopBar = styled.div`
-    position: fixed;
-    z-index: 99;
-    width: 100%;
-    height: 70px;
-    background: #20202a;
-    -webkit-box-shadow: 0 3px 8px 0 rgba(15, 15, 20, 0.2);
-    box-shadow: 0 3px 8px 0 rgba(15, 15, 20, 0.2);
-    padding: 0 30px;
-    display: none;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center; 
-`
-
 export const AppWrapper = styled.div`
     max-width: 1440px;
     margin-left: auto;
@@ -40,6 +22,10 @@ export const AppWrapper = styled.div`
     overflow: hidden;
     -webkit-box-shadow: 0 3px 8px 0 rgba(15, 15, 20, 0.2);
     box-shadow: 0 3px 8px 0 rgba(15, 15, 20, 0.2); 
+
+    @media screen and (max-width: 992px) {
+        min-width: 100%; 
+    }
 `
 
 export const AppContainer = styled.div`
@@ -64,4 +50,8 @@ export const AppInfoBar = styled.div`
     box-shadow: 0 3px 8px 0 rgba(15, 15, 20, 0.2);
     -webkit-transition: 0.55s ease-in-out;
     transition: 0.55s ease-in-out;
+
+    @media screen and (max-width: 992px) {
+        display: none;
+    }
 `

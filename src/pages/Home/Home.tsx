@@ -1,5 +1,5 @@
 import MainButton from "../../components/MainButton/MainButton";
-import { ArtTop, ArtTopOverlay, BannerBack, BannerText, BannerTitle, GitHubStatsContainer, SwiperContainer, ImageEffect, MyTopImage, StatsArea, TopContainer } from "./Home.styles";
+import { ArtTop, ArtTopOverlay, BannerBack, BannerText, BannerTitle, GitHubStatsContainer, SwiperContainer, ImageEffect, MyTopImage, StatsArea, TopContainer, GitHubMainContainer } from "./Home.styles";
 import { TypeAnimation } from 'react-type-animation';
 import CardItem from "../../components/CardItem/CardItem";
 import { MyStats } from "./MyStats/MyStats";
@@ -11,9 +11,12 @@ import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
 import ApiGithub from "./ApiGithub/ApiGithub";
+import GitHubStats from "./GitHubStats/GitHubStats";
+
+
 
 export function Home() {
-
+    const { userData, totalStars } = ApiGithub();
     return (
         <>
             <TopContainer>
@@ -104,10 +107,12 @@ export function Home() {
                     {/* <SwiperSlide></SwiperSlide> */}
                 </Swiper>
             </SwiperContainer>
-            <GitHubStatsContainer>
-                <h4>Github stats</h4>
-                <ApiGithub />
-            </GitHubStatsContainer>
+            <GitHubMainContainer>
+                <GitHubStatsContainer>
+                    <h4>Github stats</h4>
+                    <GitHubStats userData={userData} totalStars={totalStars} />
+                </GitHubStatsContainer>
+            </GitHubMainContainer>
         </>
     )
 }

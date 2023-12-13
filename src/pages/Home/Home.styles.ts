@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const TopContainer = styled.div`
     height: 430px;
     @media screen and (max-width: 1233px) {
-        height: 370px;
+        height: 375px;
     }
 `
 
@@ -16,7 +16,7 @@ export const ArtTop = styled.div`
   background-image: url('https://miro.medium.com/v2/resize:fit:1358/0*eIhVp0KXrXSSHORN.gif');
 
   @media screen and (max-width: 1233px) {
-    height: 270px;
+    height: 285px;
   }
     
 `
@@ -80,7 +80,7 @@ export const BannerTitle = styled.div`
         color: #fafafc;
 
         @media screen and (max-width: 1233px) {
-            font-size: 3rem;
+            font-size: 3.5rem;
         }
     }
 `
@@ -149,12 +149,18 @@ export const SwiperContainer = styled.div`
 
 `
 
-export const GitHubStatsContainer = styled.div`
-    flex-direction: column;
-    width: 100%;
+export const GitHubMainContainer = styled.div`
     display: flex;
+    width: 100%;
     padding-left: 42px;
     padding-right: 42px;
+`
+
+export const GitHubStatsContainer = styled.div`
+    flex: 1;
+    flex-direction: column;
+    max-width: 100%;
+    display: flex;
     overflow: hidden;
 
     h4 {

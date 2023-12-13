@@ -11,56 +11,58 @@ export const GitHubCardStyle = styled.div`
     max-width: 100%;
     justify-content: center;
     align-items: center;
-
-    @media screen and (max-width: 992px) {
-        margin-bottom: 18px;
-    }
   `
 
 export const GitHubCardContent = styled.div`
+    display: flex;
     justify-content: center;
     align-items: center;
-    display: flex;
     flex-direction: row-reverse;
-    width: 300px;
-    gap: 12px;
+    gap: 16px;
 
     h1 {
         color: ${(props) => props.theme['yellow']};
-        font-size: 24px;
+        font-size: 20px;
     }
 
     h3 {
         text-transform: uppercase;
-        font-size: 24px
-
+        font-size: 20px;
     }
 
-    @media screen and (max-width: 992px) {
-        width: 225px;
-
+    @media screen and (max-width: 1400px) {
         h1 {
             color: ${(props) => props.theme['yellow']};
-            font-size: 20px;
+            font-size: 18px;
         }
 
         h3 {
             text-transform: uppercase;
-            font-size: 20px
-
-        }
-  }
-`
-
-export const GitHubStatItemContainer = styled.div`
-    display: flex;
-    justify-content: space-between;
-    max-width: 100%;
-    flex-wrap: wrap;
-    
-    @media screen and (max-width: 992px) {
-        > :last-child {
-            flex-basis: 100%;
+            font-size: 18px;
         }
     }
-`
+
+    @media screen and (max-width: 1280px) {
+        h1 {
+            color: ${(props) => props.theme['yellow']};
+            font-size: 16px;
+        }
+
+        h3 {
+            text-transform: uppercase;
+            font-size: 16px;
+        }
+    }
+
+    @media screen and (max-width: 1180px) {
+        h1 {
+            color: ${(props) => props.theme['yellow']};
+            font-size: 12px;
+        }
+
+        h3 {
+            text-transform: uppercase;
+            font-size: 12px;
+        }
+    }
+`;
