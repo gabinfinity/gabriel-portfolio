@@ -2,8 +2,6 @@ import ContactCard from './ContactCard/ContactCard'
 import { ContactCardsContainer, ContactTitle, FormAreaContainer } from './Contact.styles'
 import { ArtTop, ArtTopOverlay } from '../Home/Home.styles'
 import { ContactForm } from './ContactForm/ContactForm'
-import Container from '@mui/material/Container';
-import Box from '@mui/material/Box';
 import Grid from '@mui/material/Grid';
 
 export function Contact() {
