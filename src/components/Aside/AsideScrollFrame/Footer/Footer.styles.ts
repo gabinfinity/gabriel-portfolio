@@ -45,7 +45,5 @@ export const FooterContainer = styled.footer`
 
   @media screen and (max-width: 992px) {
         z-index: 0;
-        height: 50px;
-        bottom: 35px;
     }
 `;

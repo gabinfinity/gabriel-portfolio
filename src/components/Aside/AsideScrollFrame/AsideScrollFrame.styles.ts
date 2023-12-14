@@ -98,6 +98,6 @@ export const SoftSkillsContainer = styled.div`
     width: 100%;
     padding: 15px;
     gap: 5px;
-    margin-bottom: 34px
+    margin-bottom: 42px;
 
 `

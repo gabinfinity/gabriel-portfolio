@@ -58,6 +58,7 @@ export const MenuBarBtn = styled.div`
     a {
         text-decoration: none;
         color: inherit;
+        
     }
 
     svg {
@@ -70,6 +71,15 @@ export const MenuBarBtn = styled.div`
                     fill: ${(props) => props.theme['yellow']};
             }
         }
+
+        @media screen and (max-width: 992px) {
+            &:hover {
+                path {
+                    fill: ${(props) => props.theme['gray-text']};
+                }
+            }
+        }
+        
     }
 `;
 

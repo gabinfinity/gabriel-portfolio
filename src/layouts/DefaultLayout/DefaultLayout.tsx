@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { AsideScrollFrame } from "../../components/Aside/AsideScrollFrame/AsideScrollFrame";
 import { Footer } from "../../components/Aside/AsideScrollFrame/Footer/Footer";
 import Content from "../../components/Content/Content";
@@ -12,19 +12,34 @@ export const DefaultLayout: React.FC = () => {
     const toggleAppInfoBar = () => {
       setAppInfoBarVisible(!appInfoBarVisible);
     };
-  
-    const showHomeBtn = true;
+
+
+    const [showIfIsMobile, setshowIfIsMobile] = useState(true);
+
+    useEffect(() => {
+        const handleResize = () => {
+            setshowIfIsMobile(window.innerWidth <= 992);
+        };
+
+        window.addEventListener('resize', handleResize);
+
+        handleResize();
+
+        return () => {
+            window.removeEventListener('resize', handleResize);
+        };
+    }, []);
   
     return (
       <AppDiv>
         <AppWrapper>
           <AppContainer>
-            <AppInfoBar style={{ display: appInfoBarVisible ? 'none' : 'flex' }}>
+            <AppInfoBar style={{ display: showIfIsMobile ? (appInfoBarVisible ? 'none' : 'flex') : (appInfoBarVisible ? 'flex' : 'none') }}>
               <Header />
               <AsideScrollFrame />
               <Footer />
             </AppInfoBar>
-            <Menu showHomeBtn={showHomeBtn} toggleAppInfoBar={toggleAppInfoBar} />
+            <Menu showIfIsMobile={showIfIsMobile} toggleAppInfoBar={toggleAppInfoBar} />
             <Content />
           </AppContainer>
         </AppWrapper>

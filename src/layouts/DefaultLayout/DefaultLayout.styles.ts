@@ -51,5 +51,8 @@ export const AppInfoBar = styled.div`
     @media screen and (max-width: 992px) {
         display: none;
         z-index: 0;
+        width: 100%;
+        min-width: 100%;
+        margin-bottom: 35px;
     }
 `

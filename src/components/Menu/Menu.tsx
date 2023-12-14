@@ -8,11 +8,11 @@ import { MenuBar, MenuBarBtn, MenuBarContent, MenuBarHeader } from './Menu.style
 import PlusIcon from '../svgs/PlusIcon';
 
 interface MenuProps {
-  showHomeBtn: boolean;
+  showIfIsMobile: boolean;
   toggleAppInfoBar: () => void;
 }
 
-const Menu: React.FC<MenuProps> = ({ showHomeBtn, toggleAppInfoBar }) => {
+const Menu: React.FC<MenuProps> = ({ showIfIsMobile, toggleAppInfoBar }) => {
   return (
     <MenuBar>
       <MenuBarHeader>
@@ -23,7 +23,7 @@ const Menu: React.FC<MenuProps> = ({ showHomeBtn, toggleAppInfoBar }) => {
         </MenuBarBtn>
       </MenuBarHeader>
       <MenuBarContent>
-        {showHomeBtn && (
+        {showIfIsMobile && (
           <>
             <MenuBarBtn>
               <Link to='/'>
