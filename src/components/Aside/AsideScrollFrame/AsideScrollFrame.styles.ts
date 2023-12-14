@@ -25,7 +25,7 @@ export const ScrollFrame = styled.aside`
 `
 
 export const InfoBarAbout = styled.div `
-    color: #8c8c8e;
+    color: ${(props) => props.theme['gray-text']};
     padding: 0 15px;
     margin-bottom: 20px;
     width: 100%;

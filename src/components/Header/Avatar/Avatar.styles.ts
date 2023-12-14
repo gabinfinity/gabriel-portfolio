@@ -37,7 +37,7 @@ export const AvatarContainer = styled.div`
         font-weight: 700;
         font-size: 11px;
         line-height: 30px;
-        color: #fafafc;
+        color: ${(props) => props.theme['white-premium']};
         border-radius: 50%;
         opacity: 0;
         z-index: 1;
@@ -92,7 +92,7 @@ export const AvatarLightStatus = styled.div`
             position: absolute;
             bottom: -1px;
             right: 1px;
-            background: #fafafc;
+            background: ${(props) => props.theme['white-premium']};
             height: 23px;
             width: 23px;
             border-radius: 50%;
@@ -128,7 +128,7 @@ export const AvatarLightStatusColor = styled.div`
     right: 5px;
     height: 15px;
     width: 15px;
-    background: #FFC107;
+    background: ${(props) => props.theme['yellow']};
     border-radius: 50%;
     -webkit-transition: 0.4s ease-in-out;
     transition: 0.4s ease-in-out;
@@ -143,7 +143,7 @@ export const AvatarLightStatusColor = styled.div`
         left: 28px;
         font-size: 10px;
         font-weight: 200;
-        color: #8c8c8e;
+        color: ${(props) => props.theme['gray-text']};
         -webkit-box-shadow: 0 1px 4px 0 rgba(15, 15, 20, 0.1);
         box-shadow: 0 1px 4px 0 rgba(15, 15, 20, 0.1);
         background: #191923;

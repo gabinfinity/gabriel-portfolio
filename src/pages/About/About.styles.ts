@@ -31,12 +31,12 @@ export const AboutConteiner = styled.div`
 `
 
 export const AboutArticle = styled.article`
-    color: #fafafc;
+    color: ${(props) => props.theme['white-premium']};
 
     i {
         font-family: "Courier Prime";
         font-size: 16px;
-        color: #FFC107;
+        color: ${(props) => props.theme['yellow']};
     }
 `
 

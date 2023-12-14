@@ -1,13 +1,13 @@
 import styled from "styled-components";
 
 export const NameAndJobArea = styled.div`
-    color: #fafafc;
+    color: ${(props) => props.theme['white-premium']};
     -webkit-transition: 0.4s ease-in-out;
     transition: 0.4s ease-in-out;
     width: 60%;
 
     a {
-        color: #fafafc;
+        color: ${(props) => props.theme['white-premium']};
         -webkit-transition: 0.4s ease-in-out;
         transition: 0.4s ease-in-out;
         text-decoration: none;
@@ -15,13 +15,13 @@ export const NameAndJobArea = styled.div`
         font-weight: 600;
 
     &:hover {
-        color: #FFC107;
+        color: ${(props) => props.theme['yellow']};
         }
     }
 `
 
 export const MyJobDescription = styled.div`
     font-size: 11px;
-    color: #8c8c8e;
+    color: ${(props) => props.theme['gray-text']};
     width:100%;
 `

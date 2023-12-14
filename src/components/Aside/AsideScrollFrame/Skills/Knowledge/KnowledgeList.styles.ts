@@ -9,12 +9,12 @@ export const Knowledge = styled.div`
     svg {
             height: auto;
             width: 12px;
-            fill: #fec02f;
+            fill: ${(props) => props.theme['yellow']};
         }
 
     li {
       list-style-type: none;
-      color: #8c8c8e;
+      color: ${(props) => props.theme['gray-text']};
 }
 
 `

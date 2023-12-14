@@ -12,7 +12,7 @@ export const StatsFrame = styled.div`
     gap: 16px;
 
   span {
-      color: #FFC107;
+      color: ${(props) => props.theme['yellow']};
       font-weight: 600;
       font-family: "Poppins", sans-serif;
       font-size: 22px

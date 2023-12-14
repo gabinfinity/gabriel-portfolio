@@ -96,7 +96,7 @@ export const BannerTitle = styled.div`
 
     h1 {
         font-size: 5rem;
-        color: #fafafc;
+        color: ${(props) => props.theme['white-premium']};
 
         @media screen and (max-width: 1233px) {
             font-size: 3.5rem;
@@ -108,12 +108,12 @@ export const BannerTitle = styled.div`
     }
 `
 export const BannerText = styled.div`
-    color: #fafafc;
+    color: ${(props) => props.theme['white-premium']};
 
     i {
         font-family: "Courier Prime";
         font-size: 16px;
-        color: #FFC107;
+        color: ${(props) => props.theme['yellow']};
     }
 
     @media screen and (max-width: 992px) {

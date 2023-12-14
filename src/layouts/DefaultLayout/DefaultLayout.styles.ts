@@ -14,7 +14,7 @@ export const AppWrapper = styled.div`
     max-width: 1440px;
     margin-left: auto;
     margin-right: auto;
-    background: #1e1e28;
+    background: ${(props) => props.theme['gray-200']};
     background-size: cover;
     width: 100%;
     height: 100%;

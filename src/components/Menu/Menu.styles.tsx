@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const MenuBar = styled.div`
     display: flex;
     flex-direction: column;
-    background: #20202a;
+    background: ${(props) => props.theme['gray-300']};
     width: 75px;
     height: calc(100vh - 30px);
     position: absolute;

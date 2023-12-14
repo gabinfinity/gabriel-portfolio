@@ -55,12 +55,12 @@ export const CrouselItemDetails = styled.div`
   }
 
   h5 {
-    color: #fff;
+    color: ${(props) => props.theme['white']};
     margin: 5px 0;
   }
 
   h6 {
-    color: #fff;
+    color: ${(props) => props.theme['white']};
     margin: 5px 0;
   }
 

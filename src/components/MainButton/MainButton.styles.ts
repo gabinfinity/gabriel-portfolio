@@ -21,7 +21,7 @@ export const Btn = styled.button`
     text-transform: uppercase;
     -webkit-box-shadow: 0 1px 4px 0 rgba(15, 15, 20, 0.1);
     box-shadow: 0 1px 4px 0 rgba(15, 15, 20, 0.1);
-    background: #FFC107;
+    background: ${(props) => props.theme['yellow']};
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
@@ -37,7 +37,7 @@ export const Btn = styled.button`
         align-self: center;
         font-weight: 600;
         letter-spacing: 1.5px;
-        color: #20202a;
+        color: ${(props) => props.theme['gray-300']};
   }
 
   &:hover {

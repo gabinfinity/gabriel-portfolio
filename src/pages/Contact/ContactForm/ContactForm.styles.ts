@@ -5,7 +5,7 @@ export const FormArea = styled.div`
     -webkit-box-shadow: 0 3px 8px 0 rgba(15, 15, 20, 0.2);
     box-shadow: 0 3px 8px 0 rgba(15, 15, 20, 0.2);
     padding: 30px;
-    margin-bottom: 30px;
+    margin-bottom: 100px;
     width: 100%;
   `
 
@@ -18,11 +18,11 @@ export const FormField = styled.div`
         align-items: center;
         justify-content: center;
         text-align: center;
-        color: #8c8c8e;
+        color: ${(props) => props.theme['gray-text']};
         position: absolute;
         height: 50px;
         width: 50px;
-        background: #20202a;
+        background: ${(props) => props.theme['gray-300']};
         top: 0;
         left: 0;
         padding: 0 15px;
@@ -50,7 +50,7 @@ export const FormInput = styled.input`
     width: 100%;
     background: linear-gradient(159deg, #252532 0%, #23232d 100%);
     border: none;
-    color: #fafafc;
+    color: ${(props) => props.theme['white-premium']};
     padding-left: 65px;
     padding-right: 15px;
     -webkit-box-shadow: inset 0 1px 4px 0 rgba(15, 15, 20, 0.1);
@@ -80,7 +80,7 @@ export const FormInput = styled.input`
     width: 100%;
     background: linear-gradient(159deg, #252532 0%, #23232d 100%);
     border: none;
-    color: #fafafc;
+    color: ${(props) => props.theme['white-premium']};
     padding-left: 65px;
     padding-right: 15px;
     -webkit-box-shadow: inset 0 1px 4px 0 rgba(15, 15, 20, 0.1);

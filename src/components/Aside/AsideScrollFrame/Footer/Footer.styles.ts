@@ -31,7 +31,7 @@ export const FooterContainer = styled.footer`
         svg {
             text-shadow: 0 0 3px rgba(250, 250, 252, 0.4);
             color: ${(props) => props.theme['yellow']};
-            fill: ${(props) => props.theme['yellow']}; /* Substitua 'cor_hover' pela cor desejada no hover */
+            fill: ${(props) => props.theme['yellow']};
         }
     }
 

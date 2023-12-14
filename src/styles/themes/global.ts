@@ -33,7 +33,7 @@ h4,
 h5,
 h6 {
   font-weight: 700;
-  color: #fafafc;
+  color: ${(props) => props.theme['white-premium']};
   margin-bottom: 0;
   font-family: "Poppins", sans-serif;
   -ms-user-select: none;
