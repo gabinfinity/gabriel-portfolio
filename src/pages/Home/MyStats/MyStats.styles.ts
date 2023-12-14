@@ -11,10 +11,6 @@ export const StatsFrame = styled.div`
     align-items: center;
     gap: 16px;
 
-    -ms-user-select: none;
-    -webkit-user-select: none;
-    user-select: none;
-
   span {
       color: #FFC107;
       font-weight: 600;

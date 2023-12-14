@@ -38,4 +38,14 @@ export const ContactCardContent = styled.div`
         }
         
     }
+
+    @media screen and (max-width: 992px) {
+        h6 {
+            font-size: 12px;
+        }
+
+        span {
+            font-size: 12px;
+        }
+    }
 `

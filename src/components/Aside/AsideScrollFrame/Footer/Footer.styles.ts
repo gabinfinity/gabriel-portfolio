@@ -42,4 +42,10 @@ export const FooterContainer = styled.footer`
       transition: 0.2s ease-in-out;
     }
   }
+
+  @media screen and (max-width: 992px) {
+        z-index: 0;
+        height: 50px;
+        bottom: 35px;
+    }
 `;

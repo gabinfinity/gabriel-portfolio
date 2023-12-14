@@ -35,7 +35,12 @@ h6 {
   font-weight: 700;
   color: #fafafc;
   margin-bottom: 0;
-  font-family: "Poppins", sans-serif; }
+  font-family: "Poppins", sans-serif;
+  -ms-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+
+}
 
 /* line 35, ../scss/_common.scss */
 h1 {

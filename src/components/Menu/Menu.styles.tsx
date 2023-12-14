@@ -84,7 +84,6 @@ export const MenuBarContent = styled.div`
 
     @media screen and (max-width: 992px) {
         flex-direction: row;
-        gap: 100px;
-
+        gap: 70px;
     }
 `;

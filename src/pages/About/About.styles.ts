@@ -5,9 +5,15 @@ export const AboutTitle = styled.div`
     width: 100%;
     text-align: center;
 
-    @media screen and (max-width: 992px) {
+    @media screen and (max-width: 1233px) {
         h1 {
             font-size: 42px;
+        }
+    }
+
+    @media screen and (max-width: 992px) {
+        h1 {
+            font-size: 36px;
         }
     }
 `
@@ -18,6 +24,10 @@ export const AboutConteiner = styled.div`
     align-items: center;
     padding: 48px 48px 0 48px;
     width: 100%;
+
+    @media screen and (max-width: 992px) {
+        flex-direction: column-reverse;
+    }
 `
 
 export const AboutArticle = styled.article`
@@ -50,9 +60,15 @@ export const AboutImage = styled.div`
         animation: float 6s ease-in-out infinite;
     }
 
+    @media screen and (max-width: 1233px) {
+        h1 {
+            width: 150px;
+        }
+    }
+
     @media screen and (max-width: 992px) {
         img {
-            width: 150px;
+            width: 100px;
         }
     }
 `
