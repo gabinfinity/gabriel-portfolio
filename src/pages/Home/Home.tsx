@@ -31,13 +31,13 @@ export function Home() {
                                     <i>{`<code> `}</i>
                                     <TypeAnimation
                                         sequence={[
-                                            'I like to code software',
+                                            'I like to code',
                                             2000,
-                                            'I like to work hard',
+                                            'I like to work ',
                                             2000,
-                                            'I like to play a lot games',
+                                            'I like to play',
                                             2000,
-                                            'And I really love coffee',
+                                            'I love coffee',
                                             2000
                                         ]}
                                         wrapper="span"
@@ -54,10 +54,10 @@ export function Home() {
                 </ArtTop>
             </TopContainer>
             <StatsArea>
-                <MyStats numberStats='+1' textStats='Years Experience' />
-                <MyStats numberStats='4' textStats='Completed Projecs' />
+                <MyStats numberStats='1' textStats='Years Experience' />
+                <MyStats numberStats='4' textStats='Projects finished' />
                 <MyStats numberStats='2' textStats='Certificates' />
-                <MyStats numberStats='5' textStats='Happy Customers' />
+                <MyStats numberStats='5' textStats='Customers' />
             </StatsArea>
             <SwiperContainer>
                 <h4>My personal projects</h4>

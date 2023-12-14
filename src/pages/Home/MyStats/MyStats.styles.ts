@@ -3,6 +3,7 @@ import styled from "styled-components";
 export const MyStatsNumbers = styled.div`
   overflow: hidden;
   position: relative;
+
 `
 
 export const StatsFrame = styled.div`
@@ -17,4 +18,22 @@ export const StatsFrame = styled.div`
       font-size: 22px
 
   }
+
+  @media screen and (max-width: 500px) {
+    h6 {
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      max-width: 65px;
+
+      &:hover {
+        white-space: normal;
+        overflow: visible;
+        text-overflow: initial;
+        max-width: 150px;
+    }
+
+    }
+  }
+
 `

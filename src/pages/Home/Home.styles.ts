@@ -2,8 +2,13 @@ import styled from "styled-components";
 
 export const TopContainer = styled.div`
     height: 430px;
+
     @media screen and (max-width: 1233px) {
         height: 375px;
+    }
+
+    @media screen and (max-width: 992px) {
+        height: 390px;
     }
 `
 
@@ -18,6 +23,10 @@ export const ArtTop = styled.div`
   @media screen and (max-width: 1233px) {
     height: 285px;
   }
+
+    @media screen and (max-width: 992px) {
+        height: 290px;
+    }
     
 `
 
@@ -54,6 +63,16 @@ export const MyTopImage = styled.div`
     left: 50%;
     transform: translateX(-50%);
     background-image: url('https://miro.medium.com/v2/resize:fit:1358/0*eIhVp0KXrXSSHORN.gif');
+
+    @media screen and (max-width: 1233px) {
+        background-position-y: center;
+        background-position-x: left;
+    }
+
+    @media screen and (max-width: 992px) {
+        background-position-y: center;
+        background-position-x: left;
+    }
 `
 
 export const ImageEffect = styled.div`
@@ -82,6 +101,10 @@ export const BannerTitle = styled.div`
         @media screen and (max-width: 1233px) {
             font-size: 3.5rem;
         }
+
+        @media screen and (max-width: 992px) {
+            font-size: 2.5rem;
+        }
     }
 `
 export const BannerText = styled.div`
@@ -92,15 +115,27 @@ export const BannerText = styled.div`
         font-size: 16px;
         color: #FFC107;
     }
+
+    @media screen and (max-width: 992px) {
+        
+        span {
+            font-size: 12px !important;
+        }
+
+        i {
+            font-size: 12px;
+        }
+    }
 `
 
 export const StatsArea = styled.div`
     display: flex;
-    justify-items: center;
     justify-content: space-between;
     padding: 0 40px 0 40px;
-    gap: 16px;
     
+    @media screen and (max-width: 500px) {
+      flex-wrap: wrap;
+    }
 `
 
 export const SwiperContainer = styled.div`
@@ -154,6 +189,11 @@ export const GitHubMainContainer = styled.div`
     width: 100%;
     padding-left: 42px;
     padding-right: 42px;
+
+    @media screen and (max-width: 992px) {
+        margin-bottom: 75px;
+    }
+
 `
 
 export const GitHubStatsContainer = styled.div`
