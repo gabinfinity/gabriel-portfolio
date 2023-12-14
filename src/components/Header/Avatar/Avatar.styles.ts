@@ -128,7 +128,7 @@ export const AvatarLightStatusColor = styled.div`
     right: 5px;
     height: 15px;
     width: 15px;
-    background: ${(props) => props.theme['yellow']};
+    background: ${(props) => props.theme['green']};
     border-radius: 50%;
     -webkit-transition: 0.4s ease-in-out;
     transition: 0.4s ease-in-out;
