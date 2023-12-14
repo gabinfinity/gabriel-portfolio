@@ -23,9 +23,6 @@ export const AppWrapper = styled.div`
     -webkit-box-shadow: 0 3px 8px 0 rgba(15, 15, 20, 0.2);
     box-shadow: 0 3px 8px 0 rgba(15, 15, 20, 0.2); 
 
-    @media screen and (max-width: 992px) {
-        min-width: 100%; 
-    }
 `
 
 export const AppContainer = styled.div`

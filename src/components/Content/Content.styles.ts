@@ -9,6 +9,10 @@ export const ContentMainContainer = styled.main`
         -webkit-transition: 0.55s ease-in-out;
         transition: 0.55s ease-in-out;
 
+        @media screen and (max-width: 992px) {
+            margin-right: 0;
+        }
+
         &::-webkit-scrollbar {
             width: 1px;
         }

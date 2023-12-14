@@ -15,7 +15,7 @@ export function DefaultLayout() {
                         <AsideScrollFrame />
                         <Footer />
                     </AppInfoBar>
-                    <Menu />
+                    <Menu /> 
                     <Content />
                 </AppContainer>
             </AppWrapper>

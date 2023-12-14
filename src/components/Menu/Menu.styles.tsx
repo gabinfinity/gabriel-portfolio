@@ -15,6 +15,16 @@ export const MenuBar = styled.div`
     box-shadow: 0 3px 8px 0 rgba(15, 15, 20, 0.2);
     -webkit-transition: 0.55s ease-in-out;
     transition: 0.55s ease-in-out;
+
+    @media screen and (max-width: 992px) {
+        position: fixed;
+        bottom: 0;
+        height: 50px;
+        right: auto;
+        top: auto;
+        left: 0;
+        width: 100%;
+    }
 `
 
 export const MenuBarHeader = styled.div`
@@ -33,6 +43,10 @@ export const MenuBarHeader = styled.div`
     -webkit-box-shadow: 0 1px 4px 0 rgba(15, 15, 20, 0.1);
     box-shadow: 0 1px 4px 0 rgba(15, 15, 20, 0.1);
     background: linear-gradient(159deg, rgba(37, 37, 50, 0.98) 0%, rgba(35, 35, 45, 0.98) 100%);
+
+    @media screen and (max-width: 992px) {
+        display: none;
+    }
 `
 
 export const MenuBarBtn = styled.div`
@@ -67,4 +81,10 @@ export const MenuBarContent = styled.div`
     align-items: center;
     justify-content: center;
     pointer-events: all;
+
+    @media screen and (max-width: 992px) {
+        flex-direction: row;
+        gap: 100px;
+
+    }
 `;
