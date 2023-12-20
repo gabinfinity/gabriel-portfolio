@@ -69,8 +69,8 @@ export function ContactForm() {
     if (status) {
         return (
             <FormStatus> 
-                <h1>Formulário de contato enviado com sucesso!</h1>
-                <h6>Entrarei em contato em breve. Obrigado.</h6>
+                <h1>Contact form submitted successfully!</h1>
+                <h6>Will be in touch shortly. Thank you.</h6>
             </FormStatus>
         );
     }
