@@ -25,7 +25,7 @@ export function AsideScrollFrame() {
                     <h6>Residence:</h6><span>Brazil</span>
                 </li>
                 <li>
-                    <h6>City:</h6><span>Alvorada/RS</span>
+                    <h6>City:</h6><span>Maracaí/SP</span>
                 </li>
                 <li>
                     <h6>Age:</h6><span>24</span>

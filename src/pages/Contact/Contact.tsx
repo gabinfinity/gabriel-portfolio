@@ -15,8 +15,8 @@ export function Contact() {
                             <Grid item xs={100} md={4}>
                                 <ContactCard
                                     firtContentName='Country' firstValueContent='Brazil'
-                                    secondContentName='State' secondValueContent='Rio Grande do Sul'
-                                    thirdContentName='City' thirdValueContent='Alvorada'
+                                    secondContentName='State' secondValueContent='São Paulo'
+                                    thirdContentName='City' thirdValueContent='Maracaí'
                                 />
                             </Grid>
                             <Grid item xs={100} md={4}>
