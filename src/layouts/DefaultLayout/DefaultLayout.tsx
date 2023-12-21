@@ -5,6 +5,7 @@ import Content from "../../components/Content/Content";
 import { Header } from "../../components/Header/Header/Header";
 import Menu from "../../components/Menu/Menu";
 import { AppContainer, AppDiv, AppInfoBar, AppWrapper } from "./DefaultLayout.styles";
+import React from "react";
 
 export const DefaultLayout: React.FC = () => {
     const [appInfoBarVisible, setAppInfoBarVisible] = useState(true);
