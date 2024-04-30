@@ -13,8 +13,6 @@ import 'swiper/css/scrollbar';
 import ApiGithub from "./ApiGithub/ApiGithub";
 import GitHubStats from "./GitHubStats/GitHubStats";
 
-
-
 export function Home() {
     const { userData, totalStars } = ApiGithub();
     return (
